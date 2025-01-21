@@ -1,6 +1,11 @@
 .main{
-	background-image: url("http://localhost:5173/src/assets/images/BackProgrammist.png") !important;
-	margin-left: -1%  !important;
+	background-image: url("http://192.168.1.33:8003/BackProgrammist.png") !important;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.cat{
+	font-weight:900;
 }
 .dragplace{
 	border:none !important;
@@ -39,17 +44,12 @@ letter-spacing: .1rem;
 	color: #252B86 !important;
 }
 .btnModal{
-	width:75% !important;
+	width:60% !important;
 	font-size: 1.6rem;
     	font-weight: 900;
 	border:4px solid white;
 	background-color: #96A1EE;
 	color: #252B86 !important;
-}
-.btnModal:hover{
-	transition: 0.5s;
-	background-color: #252B86;
-	color: #96A1EE !important;
 }
 .checkBtn{
 	font-size: 1.6rem;
@@ -57,9 +57,4 @@ letter-spacing: .1rem;
 	border:4px solid white;
 	background-color: #96A1EE;
 	color: #252B86 !important;
-}
-.checkBtn:hover{
-	transition: 0.5s;
-	background-color: #252B86;
-	color: #96A1EE !important;
 }

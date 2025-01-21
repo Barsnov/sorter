@@ -77,7 +77,6 @@ Route::group(['middleware'=>'auth'], function(){
  Route::post('/showGame', [PageController::class, 'show_game_page'])->name('show_game_page');
  Route::get('/showGame/game/{game}', [PageController::class, 'show_game'])->name('show_game');
 
-
  Route::get('/game/categories/get',[CategoryController::class, 'gameCategoryGet'])->name('gameCategoryGet');
  Route::post('/game/check', [WordController::class, 'checkGame'])->name('checkGame');
 
