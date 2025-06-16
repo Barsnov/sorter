@@ -1,5 +1,5 @@
 .main{
-	background-image: url("http://192.168.1.33:8003/BackProgrammist.png") !important;
+	background-image: url("http://192.168.100.28:8003/BackProgrammist.png") !important;
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
@@ -7,6 +7,7 @@
 .cat{
 	font-weight:900;
 }
+
 .dragplace{
 	border:none !important;
 	background: transparent !important;

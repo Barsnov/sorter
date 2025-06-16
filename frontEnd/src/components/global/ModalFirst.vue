@@ -11,7 +11,11 @@
                         <h5 class="modal-title modalText text-center mb-4 fs-4" style="font-weight: 900; font-size: 26px !important;">
                             Инструкция игры
                         </h5>
-                        <p class="modalText">
+                        <p v-if="(idGame === 12 || 13) && gameTask === false" v-html="description" class="modalText"/>
+                        <p v-else-if="(idGame === 12 || 13) && gameTask === true" v-html="twoDescription" class="modalText"/>
+                        <p v-else-if="(idGame === 14)" v-html="description" class="modalText"/>
+                        <p v-else-if="(idGame === 15)" v-html="description" class="modalText"/>
+                        <p v-else class="modalText">
                             {{ description }}
                         </p>
                         <ul>
@@ -30,7 +34,12 @@
 <script>
 export default {
     props:{
+        idGame: {},
+        gameTask: {},
         description:{
+            type:String
+        },
+        twoDescription:{
             type:String
         },
         titleCat:{

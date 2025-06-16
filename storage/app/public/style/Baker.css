@@ -1,0 +1,54 @@
+.main{
+    background-image: url("http://192.168.100.28:8003/Baker.png");
+}
+
+.dragplaceCat{
+    background-color: #ff64c2 !important;
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
+
+.list-group-item{
+    height:auto !important;
+}
+
+.cat{
+    font-weight:900;
+    color:white !important;
+}
+
+.modalText{
+    color: #6e6ad0 !important;
+    font-weight: 500;
+    font-size:14px !important;;
+}
+.modal-content{
+    background-color: #fc9cd6;
+    border:4px solid white;
+}
+.modalCategory{
+    background-color: #fc9cd6 !important;
+    border:4px solid white;
+}
+.modalCategoryTitlte{
+    font-size:25px;
+    font-weight: 900;
+    color: #252b86 !important;
+}
+.btnModal{
+    width:80% !important;
+    font-size: 1.6rem;
+    font-weight: 900;
+    border:4px solid white;
+    background-color: #ff64c2;
+    color: white !important;
+}
+.checkBtn{
+    letter-spacing: .2rem;
+    font-size: 1.6rem;
+    font-weight: 900;
+    border:4px solid white;
+    background-color: #468c4d;
+    color: #f8f9fa !important;
+    text-transform:uppercase;
+}

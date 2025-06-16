@@ -35,16 +35,18 @@
       },
       methods: {
         getGames(){
-          axios.get(`${import.meta.env.VITE_API_URL}/api/games`).then(res => {
-            this.games = res.data;
-          });
+            axios.get(`${import.meta.env.VITE_API_URL}/api/games`).then(res => {
+                this.games = res.data;
+                console.log(axios.get(`${import.meta.env.VITE_API_URL}/api/games`))
+            });
+
         },
         GamePage(id){
           console.log(id);
         }
       },
       mounted() {
-        if(document.querySelector('head').lastChild.tagName == "LINK"){
+        if(document.querySelector('head').lastChild?.tagName === "LINK"){
             document.querySelector('head').lastChild.remove();
         }
         this.getGames();
